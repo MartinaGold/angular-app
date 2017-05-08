@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  language: 'cz',
+  availableLanguages: ["cz", "sk"]
 };

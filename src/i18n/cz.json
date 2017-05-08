@@ -1,0 +1,30 @@
+{
+  "language": {
+    "title": "Jazyk",
+    "czech": "Čeština",
+    "english": "Angličtina"
+  },
+  "menu": {
+    "home": "Home",
+    "addEmployee": "Přidat zaměstnance",
+    "employeesRecords": "Seznam zaměstnanců"
+  },
+  "name": "Jméno a přijmení",
+  "age": "Věk",
+  "position": "Pozice",
+  "addEmployee": {
+    "title": "Přidat zaměstnance",
+    "isRequired": "Vyplňte, prosím, pole",
+    "add": "Přidat",
+    "success": "Přidání proběhlo úspěšně",
+    "placeholderName": "Karel Novák",
+    "placeholderPosition": "Účetní"
+  },
+  "employeesRecords": {
+    "title": "Seznam zaměstnanců",
+    "delete": "Smazat"
+  },
+  "home": {
+    "welcome": "Vítejte na testovacích stránkách pro Angular"
+  }
+}

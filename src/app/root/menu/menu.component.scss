@@ -1,0 +1,32 @@
+@import "../../../scss/variables";
+
+.menu-container {
+  background-color: white;
+  .language-changing {
+    margin-right: 28px;
+  }
+  .dropdown li {
+    cursor: pointer;
+    a {
+      height: 27px;
+      font-size: 14px;
+      padding-top: 5px;
+    }
+  }
+}
+
+.menu-list {
+  li {
+    a {
+      height: 53px;
+      padding-top: 14px;
+      color: $main-color;
+      font-size: 17px;
+      border-radius: 1px;
+      &.active {
+        color: white;
+        background-color: $main-color;
+      }
+    }
+  }
+}

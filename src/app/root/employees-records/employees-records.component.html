@@ -1,0 +1,20 @@
+<h1 class="title">{{'employeesRecords.title' | translate}}</h1>
+
+<table class="table table-bordered employee-table">
+  <thead>
+  <tr>
+    <th>{{'name' | translate}}</th>
+    <th>{{'age' | translate}}</th>
+    <th>{{'position' | translate}}</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let employee of employeesRecords | async">
+    <td>{{employee.name}}</td>
+    <td>{{employee.age}}</td>
+    <td>{{employee.position}}</td>
+    <td class="delete-column"><a class="delete-employee" (click)="deleteEmployee(employee)">{{'employeesRecords.delete' | translate}}</a></td>
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,21 @@
+@import "../../../scss/variables";
+
+.employee-table {
+  thead tr {
+    background-color: $main-color;
+    color: white;
+  }
+  tbody tr {
+    background-color: white;
+    &:hover {
+      background-color: #f4f4f4;
+    }
+    .delete-column {
+      width: 50px;
+    }
+    .delete-employee {
+      cursor: pointer;
+      width: 20px;
+    }
+  }
+}

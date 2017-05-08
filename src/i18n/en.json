@@ -1,0 +1,30 @@
+{
+  "language": {
+    "title": "Language",
+    "czech": "Czech",
+    "english": "English"
+  },
+  "menu": {
+    "home": "Home",
+    "addEmployee": "Add employee",
+    "employeesRecords": "Employees records"
+  },
+  "name": "Name and surname",
+  "age": "Age",
+  "position": "Position",
+  "addEmployee": {
+    "title": "Add employee",
+    "isRequired": "Fill this field",
+    "add": "Add employee",
+    "success": "Adding was successful",
+    "placeholderName": "John Smith",
+    "placeholderPosition": "Accountant"
+  },
+  "employeesRecords": {
+    "title": "Employees records",
+    "delete": "Delete"
+  },
+  "home": {
+    "welcome": "Welcome on this test page for Angular"
+  }
+}
