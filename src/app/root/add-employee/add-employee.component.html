@@ -1,37 +1,40 @@
 <h1 class="title">{{'addEmployee.title' | translate}}</h1>
-<form name="addEmployeeForm" #addEmployeeForm="ngForm" class="add-employee-form" (ngSubmit)="addEmployee(employee)" novalidate>
-    <div class="form-group">
-        <label for="employeeName">{{'name' | translate}}: * </label>
-        <input type="text" class="form-control" id="employeeName" [(ngModel)]="employee.name" name="employeeName"
-               #employeeName="ngModel" placeholder="{{'addEmployee.placeholderName' | translate}}" required>
-        <div *ngIf="employeeName.errors && (employeeName.dirty || employeeName.touched)" class="invalid-value">
-            <div [hidden]=" ! employeeName.errors.required">
-                {{'addEmployee.isRequired' | translate}}
-            </div>
-        </div>
+<form name="addEmployeeForm" #addEmployeeForm="ngForm" class="add-employee-form" (ngSubmit)="addEmployee(employee)"
+      novalidate>
+  <div class="form-group">
+    <label for="employeeName">{{'name' | translate}}: * </label>
+    <input type="text" class="form-control" id="employeeName" [(ngModel)]="employee.name" name="employeeName"
+           #employeeName="ngModel" placeholder="{{'addEmployee.placeholderName' | translate}}" required>
+    <div *ngIf="employeeName.errors && (employeeName.dirty || employeeName.touched)" class="invalid-value">
+      <div [hidden]=" ! employeeName.errors.required">
+        {{'addEmployee.isRequired' | translate}}
+      </div>
     </div>
-    <div class="form-group">
-        <label for="age">{{'age' | translate}}: *</label>
-        <input type="text" class="form-control" id="age" [(ngModel)]="employee.age" name="age" placeholder="32"
-               pattern="\d+" #age="ngModel" required>
-        <div *ngIf="age.errors && (age.dirty || age.touched)" class="invalid-value">
-            <div [hidden]=" ! age.errors.required">
-                {{'addEmployee.isRequired' | translate}}
-            </div>
-        </div>
+  </div>
+  <div class="form-group">
+    <label for="age">{{'age' | translate}}: *</label>
+    <input type="text" class="form-control" id="age" [(ngModel)]="employee.age" name="age" placeholder="32"
+           pattern="\d+" #age="ngModel" required>
+    <div *ngIf="age.errors && (age.dirty || age.touched)" class="invalid-value">
+      <div [hidden]=" ! age.errors.required">
+        {{'addEmployee.isRequired' | translate}}
+      </div>
     </div>
-    <div class="form-group">
-        <label for="position">{{'position' | translate}}: *</label>
-        <input type="text" class="form-control" id="position" [(ngModel)]="employee.position" name="position"
-               placeholder="{{'addEmployee.placeholderPosition' | translate}}" #position="ngModel" required>
-        <div *ngIf="position.errors && (position.dirty || position.touched)" class="invalid-value">
-            <div [hidden]=" ! position.errors.required">
-                {{'addEmployee.isRequired' | translate}}
-            </div>
-        </div>
+  </div>
+  <div class="form-group">
+    <label for="position">{{'position' | translate}}: *</label>
+    <input type="text" class="form-control" id="position" [(ngModel)]="employee.position" name="position"
+           placeholder="{{'addEmployee.placeholderPosition' | translate}}" #position="ngModel" required>
+    <div *ngIf="position.errors && (position.dirty || position.touched)" class="invalid-value">
+      <div [hidden]=" ! position.errors.required">
+        {{'addEmployee.isRequired' | translate}}
+      </div>
     </div>
+  </div>
 
-    <button type="submit" [disabled]=" ! addEmployeeForm.form.valid" class="btn btn-default">{{'addEmployee.add' | translate}}</button>
+  <button type="submit" [disabled]=" ! addEmployeeForm.form.valid" class="btn btn-default">{{'addEmployee.add' |
+    translate}}
+  </button>
 </form>
 
 <div class="success-message" *ngIf="isSuccessAddEmployee">{{'addEmployee.success' | translate}}</div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {EmployeeService} from "./services/employee.service";
 import {environment} from "../environments/environment";
 import {TranslateService} from "ng2-translate";
@@ -11,7 +11,7 @@ import {TranslateService} from "ng2-translate";
 })
 export class AppComponent {
 
-   constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService) {
     translate.addLangs(environment.availableLanguages);
     translate.setDefaultLang(environment.language);
 
