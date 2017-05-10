@@ -5,6 +5,5 @@
 
 export const environment = {
   production: false,
-  language: 'cz',
-  availableLanguages: ["cz", "sk"]
+  language: 'cz'
 };

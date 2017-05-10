@@ -12,8 +12,6 @@ import {TranslateService} from "ng2-translate";
 export class AppComponent {
 
   constructor(private translate: TranslateService) {
-    translate.addLangs(environment.availableLanguages);
     translate.setDefaultLang(environment.language);
-
   }
 }

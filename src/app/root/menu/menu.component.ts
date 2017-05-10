@@ -9,7 +9,6 @@ import {TranslateService} from "ng2-translate";
 export class MenuComponent implements OnInit {
 
   constructor(private translate: TranslateService) {
-
   }
 
   ngOnInit() {
@@ -18,6 +17,4 @@ export class MenuComponent implements OnInit {
   changeLanguage(lang) {
     this.translate.use(lang);
   }
-
-
 }
